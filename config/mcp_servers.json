@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Aihackz Termux MCP Suite",
+  "description": "Safe, lightweight Model Context Protocol tools for rooted Android monetization & content automation",
+  "servers": {
+    "termux-browser": {
+      "type": "browser-automation",
+      "transport": "stdio",
+      "status": "ACTIVE",
+      "command": "node",
+      "args": ["/data/data/com.termux/files/home/Git/job-hunter-automation/scripts/mcp_browser_server.mjs"],
+      "port": 9222,
+      "monetizationUseCases": [
+        "Social media multi-platform publishing (Instagram, X, Facebook, LinkedIn)",
+        "Trend analysis & competitor research for viral AI content",
+        "Lead sourcing for client automation projects"
+      ],
+      "resourceFootprint": "<10MB RAM bridge, attaches to existing Chrome"
+    },
+    "telegram-broadcaster": {
+      "type": "community-marketing",
+      "transport": "stdio",
+      "status": "READY",
+      "command": "python3",
+      "args": ["/data/data/com.termux/files/home/Git/aihackz/scripts/telegram_mcp.py"],
+      "monetizationUseCases": [
+        "Broadcasting daily AI tips & tutorials to t.me/zahidoverflow",
+        "Monetized digital product drops & early-access newsletters",
+        "Automated affiliate deal sharing"
+      ],
+      "resourceFootprint": "<15MB RAM, standard Python HTTP"
+    },
+    "content-pipeline": {
+      "type": "content-generation",
+      "transport": "stdio",
+      "status": "READY",
+      "command": "python3",
+      "args": ["/data/data/com.termux/files/home/Git/aihackz/scripts/content_mcp.py"],
+      "monetizationUseCases": [
+        "Generating viral 3-second hook scripts for Reels & Shorts",
+        "Converting long-form AI guides into multi-tweet X threads",
+        "Formatting SEO tutorials for aihackz.tech"
+      ],
+      "resourceFootprint": "<15MB RAM"
+    },
+    "github-syncer": {
+      "type": "devops-sync",
+      "transport": "stdio",
+      "status": "ACTIVE",
+      "command": "bash",
+      "args": ["/data/data/com.termux/files/home/Git/aihackz/scripts/sync.sh"],
+      "monetizationUseCases": [
+        "Automated backup of content assets, scripts, and trackers",
+        "Continuous deployment of aihackz.tech static site"
+      ],
+      "resourceFootprint": "Transient (<1s execution)"
+    }
+  }
+}

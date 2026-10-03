@@ -1,0 +1,21 @@
+# Environment & Secrets
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Python & Node
+__pycache__/
+*.py[cod]
+node_modules/
+npm-debug.log*
+
+# Logs & Temporary files
+*.log
+*.tmp
+*.pid
+tmp/
+scratch/
+.system_generated/
+.DS_Store

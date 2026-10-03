@@ -1,0 +1,46 @@
+{
+  "publishedPosts": [
+    {
+      "id": "post-001",
+      "platform": "Instagram Reel",
+      "url": "https://www.instagram.com/reel/DeCDVDOsz6F/?stkn=bG5vemFtMzBtdzA=",
+      "topic": "AI Hacks & Tech Showcase",
+      "status": "LIVE",
+      "ctaTarget": "t.me/zahidoverflow"
+    },
+    {
+      "id": "post-002",
+      "platform": "X (Twitter)",
+      "url": "https://x.com/zahidoverflow/status/2106375615142400492",
+      "topic": "AI & Developer Tooling",
+      "status": "LIVE",
+      "ctaTarget": "aihackz.tech"
+    },
+    {
+      "id": "post-003",
+      "platform": "Facebook Reel",
+      "url": "https://www.facebook.com/share/r/1eWZwLoLrX/",
+      "topic": "Mobile AI Tech Automation",
+      "status": "LIVE",
+      "ctaTarget": "t.me/zahidoverflow"
+    }
+  ],
+  "upcomingPipeline": [
+    {
+      "id": "post-004",
+      "title": "Turn Any Android Phone Into a 24/7 AI Scraper Using Termux & MCP",
+      "format": "Instagram/FB Reel + X Thread + Telegram Deep-Dive",
+      "pillar": "AI Tools & Workflow Automation",
+      "status": "SCHEDULED",
+      "monetization": "Affiliate VPS links + Free Telegram Lead Magnet"
+    },
+    {
+      "id": "post-005",
+      "title": "5 Free AI APIs Developers Don't Know About (And How to Build SaaS in 24 Hours)",
+      "format": "X Thread + aihackz.tech Article",
+      "pillar": "Online Tech Monetization",
+      "status": "DRAFT",
+      "monetization": "Digital Product Template ($9 Cheat Sheet on Gumroad)"
+    }
+  ]
+}

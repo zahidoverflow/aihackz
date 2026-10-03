@@ -1,0 +1,31 @@
+{
+  "brandName": "Aihackz",
+  "tagline": "Practical AI Hacks, Automation, Cyber Intelligence & Tech Monitization",
+  "founder": "Zahidul Islam",
+  "handle": "zahidoverflow",
+  "website": "https://aihackz.tech",
+  "channels": {
+    "website": "https://aihackz.tech",
+    "telegram": "https://t.me/zahidoverflow",
+    "x_twitter": "https://x.com/zahidoverflow",
+    "instagram": "https://www.instagram.com/zahidoverflow",
+    "facebook": "https://www.facebook.com/zahidoverflow"
+  },
+  "contentPillars": [
+    "AI Tools & Workflow Automation (Agentic Coding, Termux, Local LLMs)",
+    "Cybersecurity Tips & Ethical Hacking Essentials (Defensive/VAPT awareness)",
+    "Productivity & Developer Shortcuts",
+    "Online Tech Monetization (Affiliates, SaaS, Freelance Automation)"
+  ],
+  "monetizationFunnel": {
+    "topOfFunnel": ["Instagram Reels", "Facebook Reels", "X Threads", "TikTok"],
+    "communityHub": "Telegram Channel (t.me/zahidoverflow)",
+    "authorityHub": "aihackz.tech (Tech Guides, Resource Directory)",
+    "revenueStreams": [
+      "Affiliate Marketing (Dev tools, Cloud VPS, AI software)",
+      "Digital Products (Automation scripts, Cheat sheets, Templates)",
+      "Sponsored Reviews & Collaborations",
+      "Consulting & Automation Services"
+    ]
+  }
+}
