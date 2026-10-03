@@ -1,9 +1,11 @@
 # ⚡ Aihackz | Autonomous AI Content & Monetization Engine
 
+[![Live Website](https://img.shields.io/badge/Live_Site-Online-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white)](https://zahidoverflow.tech/aihackz/)
 [![Creator](https://img.shields.io/badge/Creator-Zahidul_Islam-8A2BE2?style=for-the-badge&logo=github)](https://github.com/zahidoverflow)
 [![Brand](https://img.shields.io/badge/Brand-Aihackz-blue?style=for-the-badge&logo=artificialintelligence)](https://aihackz.tech)
 [![Telegram](https://img.shields.io/badge/Community-t.me%2Fzahidoverflow-2CA5E0?style=for-the-badge&logo=telegram)](https://t.me/zahidoverflow)
-[![Website](https://img.shields.io/badge/Portal-aihackz.tech-brightgreen?style=for-the-badge)](https://aihackz.tech)
+
+**🌐 Live Public Website:** [https://zahidoverflow.tech/aihackz/](https://zahidoverflow.tech/aihackz/) (Direct: [https://zahidoverflow.github.io/aihackz/](https://zahidoverflow.github.io/aihackz/))
 
 ---
 

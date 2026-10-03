@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aihackz | Turn AI into Code, Automation & Online Income</title>
+  <meta name="description" content="Practical AI workflows, Termux mobile scripts, cyber intelligence, and automation blueprints to build systems and monetize online. Founded by Zahidul Islam." />
+  <meta name="keywords" content="AI Hacks, Termux Automation, Make Money Online, Developer Tools, Cybersecurity, Python Bots, Zahidul Islam, Aihackz" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aihackz.tech" />
+  <meta property="og:title" content="Aihackz | Practical AI Hacks & Automation Engine" />
+  <meta property="og:description" content="Build autonomous systems, mobile AI bots, and generate income online with production-tested automation workflows." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@zahidoverflow" />
+  <meta name="twitter:creator" content="@zahidoverflow" />
+  <meta name="twitter:title" content="Aihackz | Turn AI into Code & Income" />
+  <meta name="twitter:description" content="Automate your workflows, deploy mobile AI agents, and build high-ticket digital assets." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            },
+            accent: {
+              cyan: '#06b6d4',
+              emerald: '#10b981',
+              violet: '#a855f7'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    code, pre {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .gradient-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.18) 0%, rgba(6, 182, 212, 0.05) 50%, transparent 80%);
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card:hover {
+      border-color: rgba(99, 102, 241, 0.35);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen selection:bg-brand-500 selection:text-white relative overflow-x-hidden">
+
+  <!-- Ambient Glow -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[650px] gradient-glow pointer-events-none -z-10"></div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80 bg-slate-950/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-accent-cyan flex items-center justify-center font-bold text-white shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform">
+          <i data-lucide="zap" class="w-5 h-5 fill-current"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-brand-400 bg-clip-text text-transparent">Aihackz</span>
+          <span class="text-[10px] text-slate-400 font-mono -mt-1 tracking-wider uppercase">by @zahidoverflow</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#showcase" class="hover:text-white transition-colors">Live Content</a>
+        <a href="#products" class="hover:text-white transition-colors">Tools & Kits</a>
+        <a href="#affiliates" class="hover:text-white transition-colors">Recommended Stack</a>
+        <a href="#services" class="hover:text-white transition-colors">Consulting</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="https://t.me/zahidoverflow" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-gradient-to-r from-brand-600 to-accent-cyan text-white shadow-md shadow-brand-500/20 hover:opacity-95 hover:shadow-brand-500/40 transition-all active:scale-95">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Join VIP Telegram</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-16 pb-20 sm:pt-24 sm:pb-28">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+      <!-- Pill Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-card border border-brand-500/30 text-xs font-medium text-brand-300 mb-6 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="font-mono text-emerald-400 font-bold">24/7 Production AI Engine</span>
+        <span class="text-slate-500">•</span>
+        <span>Mobile Termux & Linux Automations</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+        Turn AI Into Code, Automation & <span class="bg-gradient-to-r from-brand-400 via-accent-cyan to-accent-emerald bg-clip-text text-transparent">Online Income</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+        Practical AI workflows, Termux mobile bots, and cybersecurity tools built for real developers and creators. Stop trading hours for dollars—deploy autonomous software that works 24/7.
+      </p>
+
+      <!-- Dual CTA Buttons -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <a href="https://t.me/zahidoverflow" target="_blank" rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-brand-600 via-indigo-600 to-accent-cyan shadow-xl shadow-brand-600/30 hover:shadow-brand-600/50 hover:scale-[1.02] transition-all">
+          <i data-lucide="send" class="w-5 h-5"></i>
+          <span>Get Free AI Starter Pack (Telegram)</span>
+        </a>
+        <a href="#products"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-slate-200 glass-card hover:bg-slate-900 hover:text-white transition-all">
+          <i data-lucide="download" class="w-4 h-4 text-brand-400"></i>
+          <span>Explore Automation Scripts</span>
+        </a>
+      </div>
+
+      <!-- Key Metrics Counters -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-6 border-t border-slate-800/80">
+        <div class="p-3 text-center">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">2,519+</div>
+          <div class="text-xs text-slate-400 mt-1">Autonomous Outreach Sent</div>
+        </div>
+        <div class="p-3 text-center">
+          <div class="text-2xl sm:text-3xl font-extrabold text-accent-cyan font-mono">100%</div>
+          <div class="text-xs text-slate-400 mt-1">Verified Deliverability Rate</div>
+        </div>
+        <div class="p-3 text-center">
+          <div class="text-2xl sm:text-3xl font-extrabold text-brand-400 font-mono">24/7</div>
+          <div class="text-xs text-slate-400 mt-1">Mobile Background Uptime</div>
+        </div>
+        <div class="p-3 text-center">
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">0%</div>
+          <div class="text-xs text-slate-400 mt-1">CPU Idle Impact</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Live Content Showcase Section -->
+  <section id="showcase" class="py-16 sm:py-24 bg-slate-900/40 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-400 mb-2 font-semibold">Active Channels</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Live Content & Tech Demonstrations</h3>
+        <p class="text-slate-400 text-sm mt-3">Watch our production AI hacks, terminal scripts, and automated workflows live across social channels.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Instagram Card -->
+        <a href="https://www.instagram.com/reel/DeCDVDOsz6F/?stkn=bG5vemFtMzBtdzA=" target="_blank" rel="noopener noreferrer"
+           class="glass-card rounded-2xl p-6 group hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-pink-500/10 text-pink-400 border border-pink-500/20">
+                <i data-lucide="instagram" class="w-3.5 h-3.5"></i> Instagram Reel
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Live Video</span>
+            </div>
+            <h4 class="text-lg font-bold text-white group-hover:text-brand-300 transition-colors mb-2">
+              Automated AI Tech & Mobile Workflows
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Short-form breakdown of mobile terminal scripts and zero-cost AI agents running on consumer Android hardware.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-brand-400 font-semibold">
+            <span>Watch Reel Walkthrough</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- X (Twitter) Card -->
+        <a href="https://x.com/zahidoverflow/status/2106375615142400492" target="_blank" rel="noopener noreferrer"
+           class="glass-card rounded-2xl p-6 group hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                <i data-lucide="twitter" class="w-3.5 h-3.5"></i> X (Twitter) Deep-Dive
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Status Post</span>
+            </div>
+            <h4 class="text-lg font-bold text-white group-hover:text-brand-300 transition-colors mb-2">
+              Autonomous Agent Architecture & Developer Insights
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Behind-the-scenes engineering commentary on deploying multi-account agentic CLI tools and avoiding rate quotas.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-brand-400 font-semibold">
+            <span>Read Thread & Discussion</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+          </div>
+        </a>
+
+        <!-- Facebook Reel Card -->
+        <a href="https://www.facebook.com/share/r/1eWZwLoLrX/" target="_blank" rel="noopener noreferrer"
+           class="glass-card rounded-2xl p-6 group hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                <i data-lucide="facebook" class="w-3.5 h-3.5"></i> Facebook Reel
+              </span>
+              <span class="text-xs text-slate-400 font-mono">Viral Clip</span>
+            </div>
+            <h4 class="text-lg font-bold text-white group-hover:text-brand-300 transition-colors mb-2">
+              Mobile Terminal AI & Termux Setup
+            </h4>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              Visual guide on how to turn an ordinary phone into an autonomous background outreach and scraping node.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-brand-400 font-semibold">
+            <span>Watch Facebook Video</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Products & Free Toolkits (Money Maker #1) -->
+  <section id="products" class="py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 mb-2 font-semibold">Revenue Blueprint</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Starter Kits & Automation Assets</h3>
+        <p class="text-slate-400 text-sm mt-3">Download pre-tested scripts and guides or unlock complete autonomous workflows.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Product 1: Free Starter Kit -->
+        <div class="glass-card rounded-2xl p-6 border-slate-700/60 relative flex flex-col justify-between">
+          <div class="absolute -top-3 right-6 bg-emerald-500 text-slate-950 font-extrabold text-[10px] tracking-wider uppercase px-2.5 py-0.5 rounded-full shadow-md">
+            100% Free
+          </div>
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+              <i data-lucide="terminal" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-1">Termux AI Starter Kit</h4>
+            <p class="text-xs text-slate-400 mb-4">The exact setup scripts to install Node 24, Python 3.14, and local Chrome DevTools bridge on any Android phone.</p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6 font-mono">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> One-click setup bash script</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Termux wake-lock 24/7 config</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> socat root bridge connector</li>
+            </ul>
+          </div>
+          <a href="https://t.me/zahidoverflow" target="_blank" rel="noopener noreferrer"
+             class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs text-white bg-slate-800 hover:bg-slate-700 transition-colors">
+            <i data-lucide="send" class="w-3.5 h-3.5 text-emerald-400"></i> Download Free on Telegram
+          </a>
+        </div>
+
+        <!-- Product 2: Browser & Outreach Engine -->
+        <div class="glass-card rounded-2xl p-6 border-brand-500/50 relative flex flex-col justify-between shadow-lg shadow-brand-500/10">
+          <div class="absolute -top-3 right-6 bg-gradient-to-r from-brand-500 to-accent-cyan text-white font-extrabold text-[10px] tracking-wider uppercase px-3 py-0.5 rounded-full shadow-md">
+            Most Popular
+          </div>
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center mb-4">
+              <i data-lucide="bot" class="w-5 h-5"></i>
+            </div>
+            <div class="flex items-baseline justify-between mb-1">
+              <h4 class="text-xl font-bold text-white">Browser Scraper & CDP Suite</h4>
+              <span class="text-lg font-bold text-brand-300 font-mono">$19</span>
+            </div>
+            <p class="text-xs text-slate-400 mb-4">Full source code of the high-scale LinkedIn & Facebook job scraper daemon with DNS/SMTP verification.</p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6 font-mono">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-400"></i> Puppeteer CDP Chrome DevTools bridge</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-400"></i> Rule 3 auto-like social engagement</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-400"></i> Instant SMTP 250 OK pre-flight validator</li>
+            </ul>
+          </div>
+          <a href="https://t.me/zahidoverflow?text=I%20want%20the%20Browser%20Scraper%20Suite" target="_blank" rel="noopener noreferrer"
+             class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs text-white bg-gradient-to-r from-brand-600 to-accent-cyan hover:opacity-95 shadow-md shadow-brand-500/20 transition-all">
+            <i data-lucide="zap" class="w-3.5 h-3.5"></i> Get Full Script Access
+          </a>
+        </div>
+
+        <!-- Product 3: Bug Bounty & Recon Blueprint -->
+        <div class="glass-card rounded-2xl p-6 border-slate-700/60 relative flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-accent-violet/10 text-accent-violet flex items-center justify-center mb-4">
+              <i data-lucide="shield" class="w-5 h-5"></i>
+            </div>
+            <div class="flex items-baseline justify-between mb-1">
+              <h4 class="text-xl font-bold text-white">Cybersecurity & Recon Vault</h4>
+              <span class="text-lg font-bold text-accent-violet font-mono">$29</span>
+            </div>
+            <p class="text-xs text-slate-400 mb-4">Battle-tested reconnaissance and vulnerability discovery checklists by a HackerOne BugHunt Finalist.</p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6 font-mono">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-accent-violet"></i> Asset discovery & subdomain takeover flow</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-accent-violet"></i> IDOR & auth bypass testing checklists</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-accent-violet"></i> Report templates with high payout history</li>
+            </ul>
+          </div>
+          <a href="https://t.me/zahidoverflow?text=I%20want%20the%20Cybersecurity%20Recon%20Vault" target="_blank" rel="noopener noreferrer"
+             class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold text-xs text-white bg-slate-800 hover:bg-slate-700 transition-colors">
+            <i data-lucide="lock" class="w-3.5 h-3.5 text-accent-violet"></i> Inquire via Telegram
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Yield Affiliate Stacks (Money Maker #2) -->
+  <section id="affiliates" class="py-16 sm:py-24 bg-slate-900/40 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-400 mb-2 font-semibold">Recommended Tech Stack</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Tools That Power Our Systems</h3>
+        <p class="text-slate-400 text-sm mt-3">We test hundreds of tools. These are the battle-hardened cloud providers, AI models, and infrastructure we actually use.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Tool 1 -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-mono text-accent-cyan uppercase mb-1">Cloud Infrastructure</div>
+            <h5 class="text-base font-bold text-white mb-2">High-Frequency VPS</h5>
+            <p class="text-xs text-slate-400 mb-4">Run background Python daemons, cron jobs, and API listeners with 99.99% uptime for $4/mo.</p>
+          </div>
+          <a href="https://t.me/zahidoverflow" target="_blank" class="text-xs text-brand-400 font-semibold inline-flex items-center gap-1 hover:underline">
+            <span>Get $200 Free Credits</span> <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- Tool 2 -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-mono text-accent-emerald uppercase mb-1">AI Coding Agent</div>
+            <h5 class="text-base font-bold text-white mb-2">Cursor & Agentic IDE</h5>
+            <p class="text-xs text-slate-400 mb-4">Pair program with Claude 3.7 & Gemini Pro to build full-stack tools and scrapers 10x faster.</p>
+          </div>
+          <a href="https://t.me/zahidoverflow" target="_blank" class="text-xs text-brand-400 font-semibold inline-flex items-center gap-1 hover:underline">
+            <span>Official Referral Link</span> <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- Tool 3 -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-mono text-brand-400 uppercase mb-1">Proxy & Scraping</div>
+            <h5 class="text-base font-bold text-white mb-2">Residential Proxies</h5>
+            <p class="text-xs text-slate-400 mb-4">Bypass cloudflare and bot blocks effortlessly when performing large-scale data extraction.</p>
+          </div>
+          <a href="https://t.me/zahidoverflow" target="_blank" class="text-xs text-brand-400 font-semibold inline-flex items-center gap-1 hover:underline">
+            <span>Claim Partner Discount</span> <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+        <!-- Tool 4 -->
+        <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <div class="text-xs font-mono text-accent-violet uppercase mb-1">Security & Privacy</div>
+            <h5 class="text-base font-bold text-white mb-2">High-Speed VPN Node</h5>
+            <p class="text-xs text-slate-400 mb-4">Encrypt all Termux traffic and prevent ISP throttling while running long-distance automated scraping.</p>
+          </div>
+          <a href="https://t.me/zahidoverflow" target="_blank" class="text-xs text-brand-400 font-semibold inline-flex items-center gap-1 hover:underline">
+            <span>Get 3 Months Free</span> <i data-lucide="external-link" class="w-3 h-3"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Services & Consulting (Money Maker #3) -->
+  <section id="services" class="py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-card rounded-3xl p-8 sm:p-14 border border-brand-500/30 relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-lg text-xs font-mono font-semibold bg-brand-500/10 text-brand-300 border border-brand-500/20 mb-4">
+              <i data-lucide="briefcase" class="w-3.5 h-3.5"></i> Custom Engineering Services
+            </span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+              Need a Custom AI Automation or Bot Built for Your Business?
+            </h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+              We design and deploy autonomous data extraction pipelines, intelligent customer bots, and security-tested infrastructure tailored to your exact specifications.
+            </p>
+            <div class="grid grid-cols-2 gap-4 text-xs font-mono text-slate-300 mb-8">
+              <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accent-cyan"></i> Custom Web/CDP Scrapers</div>
+              <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accent-cyan"></i> Telegram/Discord AI Bots</div>
+              <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accent-cyan"></i> High-Scale Email Pipelines</div>
+              <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-accent-cyan"></i> Web Penetration Testing (VAPT)</div>
+            </div>
+            <a href="https://t.me/zahidoverflow?text=Hi%20Zahidul,%20I'm%20interested%20in%20hiring%20you%20for%20a%20custom%20AI%20project"
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-brand-600 to-accent-cyan shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-[1.02] transition-all">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>Book a Project / Chat with Zahidul</span>
+            </a>
+          </div>
+
+          <div class="lg:col-span-5 bg-slate-900/80 p-6 rounded-2xl border border-slate-800 font-mono text-xs text-slate-300">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800 text-slate-400">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+                <span class="text-[11px] text-slate-500 ml-1">client_pipeline.sh</span>
+              </div>
+              <span class="text-[10px] text-emerald-400">ACTIVE</span>
+            </div>
+            <pre class="overflow-x-auto text-[11px] leading-relaxed text-slate-300">
+<span class="text-slate-500"># Autonomous Pipeline Dispatch</span>
+$ node scripts/dispatcher.mjs
+[+] Connecting to Chrome CDP (9222)...
+[✓] Attaching authenticated session
+[✓] DNS MX pre-check: 250 OK verified
+[✓] Dispatching personalized pitches...
+[✓] Purging bounce notices (Inbox Zero)
+<span class="text-emerald-400">[SUCCESS] Client pipeline deployed (100% delivered)</span>
+            </pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold text-xs">
+          <i data-lucide="zap" class="w-4 h-4"></i>
+        </div>
+        <span class="font-bold text-sm tracking-tight text-white">Aihackz</span>
+        <span class="text-slate-500 text-xs">© 2026 Zahidul Islam. All rights reserved.</span>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="flex items-center gap-5 text-slate-400">
+        <a href="https://t.me/zahidoverflow" target="_blank" class="hover:text-brand-400 transition-colors" title="Telegram"><i data-lucide="send" class="w-4 h-4"></i></a>
+        <a href="https://x.com/zahidoverflow" target="_blank" class="hover:text-brand-400 transition-colors" title="X (Twitter)"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+        <a href="https://www.instagram.com/zahidoverflow" target="_blank" class="hover:text-brand-400 transition-colors" title="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+        <a href="https://www.facebook.com/zahidoverflow" target="_blank" class="hover:text-brand-400 transition-colors" title="Facebook"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+        <a href="https://github.com/zahidoverflow/aihackz" target="_blank" class="hover:text-brand-400 transition-colors" title="GitHub Repository"><i data-lucide="github" class="w-4 h-4"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
