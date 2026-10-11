@@ -2,7 +2,7 @@
 # Autonomous GitHub Sync Utility for zahidoverflow/aihackz
 # Synchronizes local content, scripts, and trackers with private GitHub repository.
 
-REPO_DIR="/data/data/com.termux/files/home/Git/aihackz"
+REPO_DIR="/data/data/com.termux/files/home/git/aihackz"
 REMOTE="origin"
 BRANCH="main"
 
